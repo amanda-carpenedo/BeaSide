@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+  :root {
+    --padding-desktop: 40px;
+    --section-gap: 80px;
+  }
+
+  .collaborazioni__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --padding-desktop: var(--padding-mobile);
+    --section-gap: 60px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .way-of-work {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .collaborazioni__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collaborazioni__header,
+  .servizi__header,
+  .journal__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cta-final__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

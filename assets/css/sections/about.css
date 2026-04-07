@@ -1,0 +1,46 @@
+.about {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #39393944;
+}
+
+.about__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 150px 100px 100px;
+}
+
+.about__left {
+  border-right: 1px solid #39393952;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__right {
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.about__logo img {
+  height: 50px;
+  width: auto;
+  margin-left: 150px;
+}
+
+.about__brand {
+  font-family: var(--font-main);
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+
+.about__text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--black);
+  opacity: 0.85;
+}
