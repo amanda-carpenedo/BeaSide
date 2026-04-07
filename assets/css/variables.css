@@ -1,0 +1,16 @@
+:root {
+  --cream:        #F9F8F0;
+  --black:        #1A1A1A;
+  --dark-brown:   #2C1A0E;
+  --warm-sand:    #C4A882;
+  --card-dark:    #1E1510;
+  --white:        #FFFFFF;
+  --grey-light:   #E8E7DF;
+
+  --font-main: 'Tenor Sans', serif;
+
+  --container-max: 1280px;
+  --padding-desktop: 80px;
+  --padding-mobile: 24px;
+  --section-gap: 120px;
+}
