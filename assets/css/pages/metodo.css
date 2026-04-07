@@ -177,7 +177,7 @@
 
 .su-di-me__photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+ max-height: 600px;
   object-fit: cover;
   border-radius: 4px;
   display: block;
