@@ -215,7 +215,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  list-style: none; /* Removemos o padrão para não conflitar */
+  list-style: none; 
   padding: 0;
 }
 
@@ -223,15 +223,15 @@
   font-size: 13px;
   line-height: 1.7;
   color: var(--black);
-  display: flex; /* Mantém o flex para alinhar o quadrado com o texto */
+  display: flex; 
   gap: 12px;
-  align-items: flex-start; /* Alinha o quadrado no topo se o texto quebrar linha */
+  align-items: flex-start; 
 }
 
 .su-di-me__list li::before {
-  content: "■"; /* O caractere do quadradinho */
+  content: "■"; 
   color: var(--warm-sand);
-  font-size: 18px; /* Ajuste o tamanho do quadrado aqui */
+  font-size: 18px; 
   margin-top: -5px; 
   flex-shrink: 0;
 }
