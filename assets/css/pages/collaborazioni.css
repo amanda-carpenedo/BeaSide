@@ -60,33 +60,35 @@
 
 /* ─── INTRO ─────────────────────────────────────────────── */
 
-.servizi-intro {
-  padding: 60px 100px 80px;
+.progetti-intro {
+  padding: 50px 100px 0px;
   max-width: 95%;
 }
 
-.servizi-intro__lead {
+.progetti-intro__lead {
   font-size: 15px;
   font-weight: 400;
   color: var(--black);
   margin-bottom: 20px;
 }
 
-.servizi-intro__text {
+.progetti-intro__text {
   font-size: 13px;
   line-height: 1.85;
   color: rgba(26, 26, 26, 0.7);
 }
 
-.space-bottom {
-  margin-bottom: 24px;
+
+ .space-bottom {
+  margin-bottom: 20px;
+} 
+/* ─── LISTA progetti ─────────────────────────────────────── */
+
+.collaborazioni-page{
+  padding: 75px 80px 150px; 
 }
 
-
-
-/* ─── LISTA SERVIZI ─────────────────────────────────────── */
-
-.container-servizi {
+.container-progetti {
   display: flex;
   align-items: flex-start;
   gap: 45px;
@@ -210,11 +212,11 @@
     padding-right: 40px;
   }
 
-  .servizi-intro {
+  .progetti-intro {
     padding: 48px 40px 60px;
   }
 
-  .container-servizi {
+  .container-progetti {
     margin: 0 40px 30px;
     gap: 32px;
   }
@@ -227,11 +229,11 @@
     padding-right: 24px;
   }
 
-  .servizi-intro {
+  .progetti-intro {
     padding: 40px 24px 48px;
   }
 
-  .container-servizi {
+  .container-progetti {
     flex-direction: column;
     margin: 0 24px 24px;
   }

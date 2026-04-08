@@ -1,0 +1,276 @@
+/* ─── NAV LIGHT ─────────────────────────────────────────── */
+
+.nav--light {
+  position: static;
+  background-color: var(--cream);
+  padding: 60px 100px 90px;
+}
+
+.nav--light .nav__links a {
+  color: var(--black);
+}
+
+.nav--light .nav__links a:hover {
+  opacity: 0.5;
+}
+
+.nav__link--active {
+  border-bottom: 1px solid var(--black);
+}
+
+/* ─── BREADCRUMB ────────────────────────────────────────── */
+
+.breadcrumb {
+  background-color: var(--cream);
+  padding: 12px 100px 32px;
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.breadcrumb__title {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.breadcrumb__list a {
+  color: rgba(26, 26, 26, 0.5);
+  transition: color 0.2s;
+}
+
+.breadcrumb__list a:hover {
+  color: var(--black);
+}
+
+.breadcrumb__list li:last-child {
+  color: var(--black);
+}
+
+.breadcrumb__sep {
+  font-size: 10px;
+  opacity: 0.4;
+}
+
+/* ─── INTRO ─────────────────────────────────────────────── */
+
+.progetti-intro {
+  padding: 48px 100px 40px;
+  max-width: 840px;
+}
+
+.progetti-intro__text {
+  font-size: 13px;
+  line-height: 1.85;
+  color: rgba(26, 26, 26, 0.7);
+}
+
+/* ─── CONTACT LAYOUT ─────────────────────────────────────── */
+
+.contatti-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 0 100px 100px;
+}
+
+/* ─── FORM ───────────────────────────────────────────────── */
+
+.contatti-form {
+  flex: 1;
+}
+
+.form-field label {
+  display: block;
+  font-size: 12px;
+  color: var(--black);
+  padding-bottom: 15px ;
+}
+
+.form-field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.25);
+  font-family: var(--font-main);
+  font-size: 13px;
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 30px;
+}
+
+.form-field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border: 1px solid rgba(26, 26, 26, 0.25);
+  font-family: var(--font-main);
+  font-size: 13px;
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 30px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom-color: var(--black);
+}
+
+.form-field textarea {
+  resize: none;
+  height: 140px;
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid rgba(26, 26, 26, 0.12);
+  margin: 28px 0;
+}
+
+.form-privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.form-privacy input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: var(--black);
+  cursor: pointer;
+}
+
+.form-privacy label {
+  font-size: 12px;
+  color: rgba(26, 26, 26, 0.6);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form-privacy a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+/* ─── SUBMIT BUTTON (glassmorphism) ─────────────────────── */
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 26px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    rgba(100, 55, 25, 0.55) 0%,
+    rgba(40, 15, 5, 0.78) 100%
+  );
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    inset 1px 0 0 rgba(255, 255, 255, 0.18),
+    inset -1px 0 0 rgba(0, 0, 0, 0.2),
+    0 8px 32px rgba(60, 20, 5, 0.35);
+  font-family: var(--font-main);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  transition:
+    background 0.25s,
+    box-shadow 0.25s;
+}
+
+.form-submit:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(130, 70, 30, 0.65) 0%,
+    rgba(55, 20, 8, 0.85) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+    inset 1px 0 0 rgba(255, 255, 255, 0.22),
+    inset -1px 0 0 rgba(0, 0, 0, 0.25),
+    0 12px 40px rgba(60, 20, 5, 0.5);
+}
+
+/* ─── SIDEBAR INFO ───────────────────────────────────────── */
+
+.contatti-info {
+  width: 200px;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+.contatti-info__block {
+  margin-bottom: 28px;
+}
+
+.contatti-info__block p,
+.contatti-info__block a {
+  display: block;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.contatti-info__block a:hover {
+  opacity: 0.6;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .nav--light,
+  .breadcrumb {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .progetti-intro {
+    padding: 40px 40px 32px;
+  }
+
+  .contatti-section {
+    padding: 0 40px 80px;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav--light,
+  .breadcrumb {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .progetti-intro {
+    padding: 32px 24px 24px;
+  }
+
+  .contatti-section {
+    flex-direction: column;
+    padding: 0 24px 60px;
+  }
+
+  .contatti-info {
+    width: 100%;
+  }
+}

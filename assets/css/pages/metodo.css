@@ -14,6 +14,10 @@
   opacity: 0.5;
 }
 
+.nav__link--active {
+  border-bottom: 1px solid var(--black);
+}
+
 /* ─── BREADCRUMB ────────────────────────────────────────── */
 
 .breadcrumb {
